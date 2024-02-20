@@ -28,5 +28,23 @@
     "Nombre": "Auriculares Bluetooth",
     "Precio": 50.0,
     "Stock": 0
+  },
+  {
+    "ProductoId": 0,
+    "Nombre": "nuevo",
+    "Precio": 11111.0,
+    "Stock": 22
+  },
+  {
+    "ProductoId": 0,
+    "Nombre": "aa",
+    "Precio": 111.0,
+    "Stock": 444
+  },
+  {
+    "ProductoId": 6,
+    "Nombre": "de jaja",
+    "Precio": 111.0,
+    "Stock": 1
   }
 ]

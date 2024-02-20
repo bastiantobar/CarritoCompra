@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            var filePath = Server.MapPath("~/App_Data/Data.json"); // Ajusta la ruta según tu estructura de proyecto
+            var filePath = Server.MapPath("~/App_Data/productos.json"); // Ajusta la ruta según tu estructura de proyecto
             var json = System.IO.File.ReadAllText(filePath);
             var productos = JsonConvert.DeserializeObject<List<Producto>>(json);
 
