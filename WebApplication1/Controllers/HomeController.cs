@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -10,7 +12,11 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var filePath = Server.MapPath("~/App_Data/Data.json"); // Ajusta la ruta según tu estructura de proyecto
+            var json = System.IO.File.ReadAllText(filePath);
+            var productos = JsonConvert.DeserializeObject<List<Producto>>(json);
+
+            return View(productos);
         }
 
         public ActionResult About()
